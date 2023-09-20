@@ -161,7 +161,7 @@ button:disabled, button[disabled]{
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-#history-container::before{
+/* #history-container::before{
     position: relative;
     background-color: #ed2ff0;
     width: 120px;
@@ -170,9 +170,9 @@ button:disabled, button[disabled]{
     left: -20%;
     top: 10%;
     z-index: -1000;
-}
+} */
 
-#history-container::after{
+/* #history-container::after{
     position: relative;
     background-color: #675afe;
     width: 120px;
@@ -181,4 +181,4 @@ button:disabled, button[disabled]{
     right: -20%;
     bottom: -10%;
     z-index: -1000;
-}
+} */
