@@ -61,7 +61,7 @@ async function generateImage(input){
     }
 
     imageHistory.push(imageUrls); // Add the generated image URLs to the history array
-    if (imageHistory.length > 10) {
+    if (imageHistory.length > 100) {
         imageHistory.shift(); // Remove the oldest entry if the history array is longer than 10
     }
 

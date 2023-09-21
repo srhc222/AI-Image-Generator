@@ -10,6 +10,7 @@
 body{
     background: #221f2f;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -21,6 +22,7 @@ body{
     color: #fff;
     background: rgba(0, 0, 0, 0.44);
     padding: 20px 30px;
+    margin-bottom: 10px;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(7.4px);
@@ -112,7 +114,7 @@ button:hover{
     margin: 10px 0;
 }
 
-button:disabled, button[disabled]{
+.gen-button:disabled, .gen-button[disabled]{
     border: 1px solid #999;
     background-color: #ccc;
     color: #666;
@@ -150,10 +152,12 @@ button:disabled, button[disabled]{
 
 #history-container{
     position: relative;
+    bottom: 18%;
     width: 40rem;
     color: #fff;
     background: rgba(0, 0, 0, 0.44);
     padding: 20px 30px;
+    margin-top: 10px;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(7.4px);
@@ -161,8 +165,8 @@ button:disabled, button[disabled]{
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-/* #history-container::before{
-    position: relative;
+#history-container::before{
+    position: absolute;
     background-color: #ed2ff0;
     width: 120px;
     height: 120px;
@@ -170,10 +174,10 @@ button:disabled, button[disabled]{
     left: -20%;
     top: 10%;
     z-index: -1000;
-} */
+}
 
-/* #history-container::after{
-    position: relative;
+#history-container::after{
+    position: absolute;
     background-color: #675afe;
     width: 120px;
     height: 120px;
@@ -181,4 +185,38 @@ button:disabled, button[disabled]{
     right: -20%;
     bottom: -10%;
     z-index: -1000;
-} */
+}
+
+.image-grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+    max-width: 80%;
+}
+
+.image-grid-container img{
+    max-width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.image-grid-container img:hover{
+    border-color: #675afe;
+}
+
+.hist-cotainer{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 0 0;
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.hist-button{
+    margin: 10px;
+}
